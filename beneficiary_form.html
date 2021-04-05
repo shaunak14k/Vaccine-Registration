@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+    <title>Appointment Request Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="asset\css\style.css" />
+	<link rel="stylesheet" href="asset\css\reg_page_style.css">
+	
+	
+	<script src="form_validation.js"></script>
+	
+ </head>
+<body>
+
+<!-- ********************************************************************************************** -->
+  
+<!--===Topbar===-->
+<div class="topbar">Virtual Healthcare when you need it most</div>
+</h2>
+<!-- 
+  <div class="topbar">
+      <h3>Virtual Healthcare when you need it most</h3>
+      <div class="heading-right">
+        <h3>Contact Us at 088893929</h3>
+      </div>
+    </div> -->
+
+<!--=== End of Topbar===-->
+
+<!----========== Header==========-->
+   <header>
+      <img class="logo" src="asset/img/logo.png" alt="logo">
+
+      <nav>
+        <ul class="navlinks">
+        <li><a href="#home">HOME</a> </li>
+        <li><a href="#about">ABOUT</a> </li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#appointment">MAKE AN APPOINTMENT</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#"><button>USER PROFILE </button></A>
+    </header>
+
+    <!----========== End of Header==========-->
+	<!-- ********************************************************************************************** -->
+
+   <div class="container">
+
+    <form id="signup" name="cust_registration" onsubmit="return validateForm() method="post">
+
+        <div class="header">
+        
+            <h3>Appointment Request Form</h3>
+            
+            <p>Enter details of the patient </p>
+            
+        </div>
+
+        <div class="inputs">
+        <b>
+			
+			First Name &emsp;&emsp;&emsp;&nbsp;
+            <input type="text" placeholder="First Name" name="cust_first_name" required  autofocus>&nbsp; *<br>
+			
+			Last Name &emsp;&emsp;&emsp;&nbsp;&nbsp;
+			<input type="text" placeholder="Last Name" name="cust_last_name"required autofocus />&nbsp; *<br>		
+			
+			<br>
+			Gender &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;</b>
+			<input type="radio" name = "patient_gender" value="male" required autofocus> Male &emsp;&emsp;
+			<input type="radio" name = "patient_gender" value="female" required autofocus> Female 
+								&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; *<br><br><br>
+			
+			<b>
+			Age &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+			<input type="text" name = "patient_age" required autofocus>&nbsp; *<br>
+			
+		
+			Email &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+			<input type="email" placeholder="E-mail" name="cust_email" required autofocus />&nbsp; *<br>
+						
+			Contact number &nbsp;&nbsp;&nbsp;
+			<input type="text" placeholder="0123456789" pattern="[0-9]{10}" name="cust_cont_no" required autofocus />&nbsp; *<br>
+
+			<br><hr><br>
+				
+			Address &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+			<input type="text" placeholder="Address" name="cust_address" required autofocus>&nbsp; *<br>
+			
+			City/Village &emsp;&emsp;&emsp;
+			<input type="text" placeholder="City" name="cust_city" autofocus><br>
+			
+			State &emsp;&emsp;&emsp; &emsp;&emsp;&nbsp;&nbsp;&nbsp;
+			<input type="text" placeholder="State" name="cust_state" autofocus><br>
+			
+			Zip/Postal &emsp;&emsp;&emsp;&nbsp;&nbsp;
+			<input type="text" placeholder="411 000" name="cust_zip" required autofocus>&nbsp; *<br>
+			
+			Country &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+			<input type="text" placeholder="Country" name="cust_country" required autofocus>&nbsp; *<br>
+			
+			<br><hr><br>
+			
+			Other Details <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<textarea id="patient_details_box" name="patient_details_box" rows="4" cols="5">	
+			</textarea><br><br><br>
+            
+            
+            <div class="checkboxy">
+                <input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">I accept the terms of use</label>
+            </div>
+			<br>
+            
+			
+            <input type="submit" value="BOOK AN APPOINTMENT" id="submit" href="#"></a>
+        
+        </div>
+
+		</form>
+
+	</div>
+
+<!-- ********************************************************************************************** -->
+
+    <!-- ======= Footer  ======= -->
+    
+    
+    <footer>
+      <div class="main-content">
+      <div class="left box">
+          <img src="asset/img/logo2.png" class="Footerlogo" ; /> <strong>VaccineDoor</strong>
+          <div class="content">
+            <p>A108 Adam Street <br>NY 535022, USA</p>
+            <br>
+             <p>  <strong>Phone:</strong> +1 5589 55488 55 <br />
+                  <strong>Email:</strong> info@example.com
+            </p>
+          </div>
+        </div>
+
+        <div class="center box">
+          <h2>Useful Links</h2>
+          <div class="content">
+            <div class="links">
+              <a href="#home">Home</a> <br />
+              <a href="#about">About Us</a> <br />
+              <a href="#search">Services</a> <br />
+              <a href="#search">How it Works</a><br />
+              <a href="#search">Contact Us</a><br />
+            </div>
+          </div>
+        </div>
+
+        <div class="right box">
+          <h2>Our Newsletter</h2>
+          <div class="content">
+            <form action="#">
+               <p>Subscribe to our e-mail newsletter today receive updates on
+                  latest news vaccines as other special offers!!</p>
+                  <div class="email">
+                    <input type="email" required />
+              </div>
+              <!-- <div class="msg">
+              <div class="text">Message *</div>
+              <textarea rows="2" cols="25" required></textarea>
+            </div> -->
+              <div class="btn">
+                <button type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>   2021 &copy VaccineDoor All rights reserved.    </center>
+      </div>
+    </footer>
+    <!-- ======= End of Footer ======= -->
+    
+  </body>
+</html>
