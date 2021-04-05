@@ -1,147 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+/********************UNIVERSAL********************/
+
+*{
+  box-sizing: border-box;
+  margin: 10;
+  padding: 10;
+  background-color:  white;
+  font-family: 'Roboto', sans-serif;
+}
+.text{
+
+  margin: 24px;
+}
+/********************TOPBAR********************/
 
 
+.topbar{
 
-
-
-
-
-
-body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
+  background-color: limegreen;
+  font-size: 1.1rem ;
+  color : white;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
-a {
-  color: darkslategrey;
-  text-decoration: none;
-}
-
-a:hover {
-  color:rgb(17, 163, 17);
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif;
-}
-
-/*Appointment Button*/
-
-.appointment-btn {
-  margin-left: 25px;
-  background: #00be55;
-  color: #fff;
-  border-radius: 4px;
-  padding: 8px 25px;
-  white-space: nowrap;
-  transition: 0.3s;
-  font-size: 14px;
-  display: inline-block;
-}
-
-.appointment-btn:hover {
-  background:seagreen;
-  align-items: center;
-  color: #fff;
-}
-
-@media (max-width: 768px) {
-  .appointment-btn {
-    margin: 0 15px 0 0;
-    padding: 6px 15px;
-  }
-}
-
-
-/* Header */
+/********************HEADER********************/
 
 .logo{
-  height: 60px;
-  width: 200px;
-  padding: 0%;
-  }
-  
-.topnav a:hover, .topnav .active, .topnav li:hover > a {
-  color: #00be55;
+  display:inline-flexbox;
+  cursor: pointer;
+  width: 180px;
+  height: 50px;
+  justify-items: left;
 }
 
-@media (max-width: 992px) {
-  .topnav {
-    padding: 15px 0;
-  }
-}
-
-.topnav.header-scrolled {
-  top: 0;
-}
-
-
-.topnav {
-  overflow: hidden;
-  background-color: white;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+li,a,button{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
-  text-transform: capitalize;
-}
-
-.topnav a:hover {
-  background-color:;
+  font-weight: 500;
   color: black;
+  text-decoration:none;
 }
 
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
+header{
+
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  padding: 30px ;
+  position: fixed;
+}
+.navlinks{
+  list-style: none;
 }
 
-.topnav .icon {
-  display: none;
+.navlinks li{
+
+  display: inline-block;
+  padding: 0px 20px;
 }
 
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+.navlinks li a{
+  transition: all 0.2s ease 0s;
 }
 
+.navlinks li a:hover{
+  color: limegreen;
+}
 
-/*End of Header*/
+button{
+  
+  padding: 5px 25px;
+  background-color: #00be55;
+  border:  none;
+  border-radius:  40px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+button:hover{
+  background-color: aqua;
+} 
+
+/********************END OF HEADER********************/
 
 
-/*Footer*/
+
+/***************************footer****************************/
 
 .Footerlogo{
-  width: 100px;
+  width: 30px;
   height:30px;
-}
-
-/* Global Parameter */
-*{
-  margin: 10px;
-  padding: 0;
-  color:black;
-  box-sizing: border-box;
-  font-family: sans-serif;
+  display:inline-flexbox;
+  cursor: pointer;
 }
 .content1{
   position: relative;
   margin: 130px auto;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
   padding: 0 20px;
 }
 .content1 .text{
   font-size: 2.5rem;
+  font-family:Roboto;
   font-weight: 600;
   color: black;
 }
@@ -150,7 +116,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: white;
 }
-/* Middle section of footer */
+
+/************************* Middle section of footer******************************* */
 footer{
   bottom: 0px;
   width: 100%;
@@ -168,6 +135,8 @@ footer{
   font-weight: 600;
   text-transform: uppercase;
 }
+
+
 .box .content{
   margin: 20px 0 0 0;
   position: relative;
@@ -180,7 +149,10 @@ footer{
   width: 100%;
   background: #1a1a1a;
 }
-/* Dash colour*/
+
+
+/************************* Dash colour*************************/
+
 .box .content:after{
   position: absolute;
   content: '';
@@ -236,6 +208,8 @@ footer{
 }
 
 /* contat us text*/
+
+
 .right form .text{
   font-size: 1.0625rem;
   margin-bottom: 2px;
@@ -249,11 +223,11 @@ footer{
   font-size: 1.0625rem;
   background: white;
   padding-left: 10px;
-  border: 1px solid : red;
+  border: 1px solid aquamarine;
 }
-.right form input:focus,
+
 .right form textarea:focus{
-  outline-color: purple;
+  outline-color:mediumseagreen;
 }
 .right form input{
   height: 35px;
@@ -266,25 +240,25 @@ footer{
   width: 100%;
   border: none;
   outline: none;
-  background:#00be55;
+  background : rgb(23, 127, 23);
   font-size: 1.0625rem;
   font-weight: 500;
   cursor: pointer;
   transition: .3s;
 }
 .right form .btn button:hover{
-  background: rgb(8, 91, 8);
+  background: lightgreen;
 }
 .bottom center{
   padding: 5px;
   font-size: 0.9385rem;
-  background:#00be55;
+  background: #00be55;
 }
-.bottom center span{
+.bottom center {
   color:white;
 }
 .bottom center a{
-  color: limegreen;
+  color:#00be55;
   text-decoration: none;
 }
 .bottom center a:hover{
@@ -302,5 +276,9 @@ footer{
   .main-content .box{
     margin: 5px 0;
   }
+}
+a:hover {
+  color:rgb(17, 163, 17);
+  text-decoration: none;
 }
 /*end of footer*/
