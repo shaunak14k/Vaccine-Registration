@@ -384,7 +384,7 @@ li {
   width: auto;
   margin-top: -30px;
   padding: 16px;
-  color: lightgreen
+  color: lightgreen;
   font-weight: bold;
   font-size: 30px;
   border-radius: 0 3px 3px 0;
@@ -778,7 +778,7 @@ footer {
   border-radius: 5px;
   /* font-weight: 500; */
   cursor: pointer;
-  transition: 0.3s; */
+  transition: 0.3s; 
 }
 .right form .btn button:hover {
   background: lightgreen;
