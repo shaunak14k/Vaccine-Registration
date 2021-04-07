@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+ 
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
@@ -16,24 +16,25 @@
 </head>
 
 <body>
-  <br />
+
   <!----=================== Header===============================-->
   <header>
-    <img class="logo" src="asset/img/logo.jpg " height="20px;" alt="logo" />
+    <img class="logo" src="asset/img/logo.png" alt="logo"/>
 
     <nav>
+	
       <ul class="navlinks">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-        <li><a href="#appointment">MAKE AN APPOINTMENT</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="aboutUs.html">ABOUT</a></li>
+        <li><a href="VaccineDetails\vaccinenames.html">SERVICES</a></li>
+        <li><a href="contactUs.html">CONTACT</a></li>
+        <li><a href="beneficiary_form.html">MAKE AN APPOINTMENT</a></li>
 
         <!-- <li>
           <button class="button" style="vertical-align:middle"><span> LOGIN </span></button>
           </li> -->
         <li><a href="#login">LOGIN</a></li>
-        <li><a href="#login">SIGN IN</a></li>
+        <input type="submit" value="SIGN UP">
         <!-- <div class="dropdown">
             <button class="dropbtn">Dropdown</button>
             <div class="dropdown-content">
@@ -49,13 +50,13 @@
   <br><br>
   <!----========== End of Header==========-->
 
-  <img class="girl" src="/asset/img/girl.jpg" />
+  <img class="girl" src="asset\img\girl.jpg" />
 
   <!----========== Container==========-->
 
   <div class="container">
     <div class="boxes">
-      <h4 class="title"><a href="">Physical</a></h4>
+      <h4 class="title">Physical</a></h4><br>
       <p class="description">
         Our physicals are performed by Board Certified Clincians who can often
         perform a physical within the same day or next day of your request.
@@ -63,7 +64,7 @@
     </div>
 
     <div class="boxes">
-      <h4 class="title"><a href="">Travel Medicines</a></h4>
+      <h4 class="title">Travel Medicines</a></h4><br>
       <p class="description">
         Vaccine Door provides individualized service for you on what travel
         vaccines and prescriptions are recommended for your trip.
@@ -71,7 +72,7 @@
     </div>
 
     <div class="boxes">
-      <h4 class="title"><a href="">Vaccine Services</a></h4>
+      <h4 class="title">Vaccine Services</a></h4><br>
       <p class="description">
         If you need vaccines that come in a series, we schedule all follow up
         doses in advance. We even send you an email reminder when your next
@@ -80,7 +81,7 @@
     </div>
 
     <div class="boxes">
-      <h4 class="title"><a href="">Lab Services</a></h4>
+      <h4 class="title">Lab Services</a></h4><br>
       <p class="description">
         All our laboratory tests are drawn in office. This provides our
         clients the convenience of having their consultation, vaccination and
@@ -102,15 +103,19 @@
         proident, sunt in culpa qui officia deserunt mollit anim id est
         laborum.
       </p>
-      <button class="belt-btn"><strong>Make an Appointment</strong></button>
+      <button class="belt-btn">
+	  <strong>
+	  <a href="beneficiary_form.html">Make an Appointment</a>
+	  </strong></button>
 
       <br /><br />
     </h4>
   </div>
   <!----==========End of Belt========================-->
 
-  <!----==========About Us========================-->
-  <div class="preabout">
+
+<!----==========About Us========================-->
+<!--<div class="preabout">
     <a href="about">
       <h1 style="text-align: center;">ABOUT US</h1>
     </a>
@@ -126,8 +131,10 @@
   <div class="about">
     <div class="box">
       <img src="asset/img/about.jpg">
-      <!-- height="400px" padding-left = "500px" float="right" width="500px"> -->
-    </div>
+      <!-- height="400px" padding-left = "500px" float="right" width="500px"> 
+
+
+   </div>
 
     <div class="box">
       <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>We offer same day and next day
@@ -392,69 +399,7 @@
     }
   </script>
   <!----==========FAQ========================-->
-  <!----==========Contact Us========================-->
-
-
-  <div class="contact">
-    <div style="text-align:center"><br>
-      <a href="how">
-        <h1 style="text-align: center;">CONTACT US</h1> <br>
-      </a>
-      <p>Swing by for a cup of coffee, or leave us a message:</p>
-      <br>
-      <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0"
-          marginwidth="0"
-          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=swargate%20pune+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
-          href="https://www.maps.ie/route-planner.htm"></a></div>
-    </div>
-
-
-    <div class="row">
-      <div class="column">
-        <br>
-
-
-        <!-- <img src="asset/img/add.png " style="height: 50px; margin: 40px;    width: 50px;"> -->
-        <h3 style="align-items: center; margin: 40px;color: green;">Our Address</h3>
-        <p style="margin: 40px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eveniet cum sed
-          deserunt architecto, perferendis ea corrupti vero quod explicabo nobis alias. Fugiat hic doloremque est,
-          ducimus quos alias temporibus nemo officiis aliquid ad nisi quis recusandae adipisci blanditiis. Suscipit
-          delectus dolore voluptas tempore unde ad modi magni explicabo enim.</p>
-
-        <h3 style="align-items: center; margin: 40px;color: green;">Contact Us</h3>
-        <p style="margin: 40px;">info@example.com <br> +1 5589 55488 55</p>
-
-
-      </div>
-      <div class="column">
-        <form action="/action_page.php">
-          <label for="fname"> </label>
-          <input type="text" id="fname" name="fname" placeholder="Your First name">
-          <label for="lname"></label>
-          <input type="text" id="lname" name="lname" placeholder="Your Last name">
-          <!-- <label for="country">Country</label>F -->
-
-
-          <!--        
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select> -->
-
-          <label for="subject"></label>
-          <textarea id="subject" name="subject" placeholder="Subject" style="height:160px"></textarea>
-
-          <input type="submit" value="Submit">
-        </form>
-      </div>
-    </div>
-  </div>
-
-
-
-
-  <!----==========Contact Us========================-->
+  
 
   <div class="text"></div>
   <!-- ======= Footer  ======= -->
