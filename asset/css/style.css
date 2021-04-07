@@ -54,8 +54,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: right;
-  padding: 30px;
+  padding: 15px;
   position: fixed;
+  border-style:	groove;
 }
 .navlinks {
   list-style: none;
@@ -254,6 +255,7 @@ body {
   text-align: center;
   font-family: "Roboto", sans-serif;
   position: relative;
+  padding-top:0px;
 }
 
 .preabout p {
