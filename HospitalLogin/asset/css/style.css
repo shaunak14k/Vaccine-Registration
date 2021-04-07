@@ -1,0 +1,280 @@
+*{
+  box-sizing: border-box;
+  margin: 10;
+  padding: 10;
+  background-color:  white;
+  font-family: 'Roboto', sans-serif;
+}
+.text{
+
+  margin: 24px;
+}
+/********************TOPBAR********************/
+
+
+.topbar{
+
+  background-color: limegreen;
+  font-size: 1.1rem ;
+  color : white;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+/********************HEADER********************/
+
+.logo{
+  display:inline-flexbox;
+  cursor: pointer;
+  width: 180px;
+  height: 50px;
+  justify-items: left;
+}
+
+li,a,button{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  text-decoration:none;
+}
+
+header{
+
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  padding: 30px ;
+  position: fixed;
+}
+.navlinks{
+  list-style: none;
+}
+
+.navlinks li{
+
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.navlinks li a{
+  transition: all 0.2s ease 0s;
+}
+
+.navlinks li a:hover{
+  color: limegreen;
+}
+
+button{
+  
+  padding: 5px 25px;
+  background-color: #00be55;
+  border:  none;
+  border-radius:  40px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+button:hover{
+  background-color: aqua;
+} 
+
+/********************END OF HEADER********************/
+
+
+
+/***************************footer****************************/
+
+.Footerlogo{
+  width: 30px;
+  height:30px;
+  display:inline-flexbox;
+  cursor: pointer;
+}
+.content1{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 20px;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-family:Roboto;
+  font-weight: 600;
+  color: black;
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: white;
+}
+
+/************************* Middle section of footer******************************* */
+footer{
+  bottom: 0px;
+  width: 100%;
+  background: white;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+
+
+/************************* Dash colour*************************/
+
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: limegreen;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span
+{
+  height: 40px;
+  width: 40px;
+  background: red;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20 px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.left .content .social a span:hover{
+  background: #00be55;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: limegreen;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+
+/* contat us text*/
+
+
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: black;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: white;
+  padding-left: 10px;
+  border: 1px solid aquamarine;
+}
+
+.right form textarea:focus{
+  outline-color:mediumseagreen;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background : rgb(23, 127, 23);
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: lightgreen;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9385rem;
+  background: #00be55;
+}
+.bottom center {
+  color:green;
+}
+.bottom center a{
+  color:#00be55;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+a:hover {
+  color:rgb(17, 163, 17);
+  text-decoration: none;
+}
+/*end of footer*/

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Availability</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="asset\css\style1.css" />
+ </head>
+<body>
+
+  
+<!--===Topbar===-->
+<div class="topbar">Virtual Healthcare when you need it most</div>
+
+  <div class="topbar">
+      <h3>Virtual Healthcare when you need it most</h3>
+      <div class="heading-right">
+        <!-- <h6>Contact Us at 088893929</h6> --> <br>
+      </div>
+    </div> 
+
+<!--=== End of Topbar===-->
+
+<!--=== End of Topbar===-->
+    <!--========== Header==========-->
+
+   <header>
+      <img class="logo" src="asset/img/logo.png" alt="logo">
+
+      <nav>
+        <ul class="navlinks">
+        <li><a href="Dashboard.html">DASHBOARD</a> </li>
+        <li><a href="AppointmentDetails.html">APPOINTMENT DETAILS</a> </li>
+        <li><a href="UpdateVaccineStatus.html">AVAILABLE VACCINE</a></li>
+        <li><a href="UpdatePrice.html">PRICE</a></li>
+        <li><a href="#">CONTACT</a></li>
+       
+      </nav>
+      <a class="cta" href="#"><button>PROFILE</button></a>
+    </header>
+  
+    <!----========== End of Header==========-->
+  <div class="navlinks">
+<div >
+  <span><CENTER><h1>Available Vaccines</h1></CENTER></span>
+</div>
+
+
+<table id="vaccine">
+  <tr>
+     <th>Sr.</th>
+    <th>Vaccines</th>
+    <th>#</th>
+   
+  </tr>
+  <tr>
+     <td></td>
+    <td><label for="vaccine">Choose a Vaccine:</label>
+  <select id="vaccineList" name="vaccineList">
+    <option value="Polio">Polio</option>
+    <option value="Covid-19">Covid-19</option>
+    <option value="flu">influenza (flu)</option>
+  </select></td>
+  
+  <td> <button type="button" onclick="myFunction1()">Add</button> </td>
+ 
+  </tr>
+  <tr>
+     <td>1</td>
+    <td>Cholera</td>
+    <td><button onclick="myFunction(this)">Delete</button></td>
+  </tr>
+  <tr>
+     <td>2</td>
+    <td>Hepatitis A</td>
+    <td><button onclick="myFunction(this)">Delete</button></td>
+  </tr>
+  <tr>
+     <td>3</td>
+     <td>Covid-19</td>
+    <td><button onclick="myFunction(this)">Delete</button></td>
+  </tr>
+  <tr>
+     <td>4</td>
+    <td>Polio</td>
+    <td><button onclick="myFunction(this)">Delete</button></td>
+  </tr>
+  <tr>
+     <td>5</td>
+    <td>Rabies</td>
+    <td><button onclick="myFunction(this)">Delete</button></td>
+  </tr>
+  
+</table>
+
+<br> <br>
+
+<script>
+function myFunction(r) {
+  var i = r.parentNode.parentNode.rowIndex;
+  document.getElementById("vaccine").deleteRow(i);
+}
+
+function myFunction1() {
+  var table = document.getElementById("vaccine");
+  var row =   table.insertRow(1);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = "VaccineA";
+  cell2.innerHTML ="Delete";
+}
+</script>
+
+
+
+
+
+   <!-- ======= Footer  ======= -->
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <!-- <img src="img\logo.png" class="Footerlogo" ; /> -->
+
+          <h2>VaccineDoor</h2>
+          <div class="content">
+            <p>
+              A108 Adam Street <br />
+              NY 535022, USA
+            </p>
+
+            <br />
+
+            <p>
+              Phone: +1 5589 55488 55 <br />
+              Email: info@example.com
+            </p>
+          </div>
+        </div>
+
+        <div class="center box">
+          <h2>Useful Links</h2>
+          <div class="content">
+            <div class="links">
+              <a href="#home">HOME</a> <br />
+              <a href="#about">About Us</a> <br />
+              <a href="#search">Services</a> <br />
+              <a href="#search">How it Works</a><br />
+              <a href="#search">Contact Us</a><br />
+            </div>
+          </div>
+        </div>
+
+        <div class="right box">
+          <h2>Our Newsletter</h2>
+          <div class="content">
+            <form action="#">
+               <p>Subscribe to our e-mail newsletter today receive updates on
+                  latest news vaccines as other special offers!!</p>
+                  <div class="email">
+                    <input type="email" required />
+              </div>
+              <!-- <div class="msg">
+              <div class="text">Message *</div>
+              <textarea rows="2" cols="25" required></textarea>
+            </div> -->
+              <div class="btn">
+                <button type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <span>2021 &copy VaccineDoor All rights reserved.</span>
+        </center>
+      </div>
+    </footer>
+    <!-- ======= End of Footer ======= -->
+    
+  </body>
+</html>
+
+
+  </body>
+</html>
