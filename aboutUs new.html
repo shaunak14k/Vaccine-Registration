@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>About Us Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="asset\css\style.css" />
+  
+</head>
+
+<style>
+/* 
+.slide{
+
+   align-items: ;
+}
+.mySlides 
+{
+  display:block;
+  align-items: center;
+  justify-content: center;
+} */
+
+.bg
+{
+  display: inline;
+  align-items: center;
+  margin: 50px;
+  height:650px;
+  width: 90%;
+
+}
+</style>
+
+
+<body>
+ <br>  
+ <!----===================Header===============================-->
+ <header>
+   <img class="logo" src="asset/img/logo.png" alt="logo"/>
+
+   <nav>
+ 
+     <ul class="navlinks">
+       <li><a href="index.html">HOME</a></li>
+       <li><a href="aboutUs.html">ABOUT</a></li>
+       <li><a href="VaccineDetails\vaccinenames.html">SERVICES</a></li>
+       <li><a href="contactUs.html">CONTACT</a></li>
+       <li><a href="beneficiary_form.html">MAKE AN APPOINTMENT</a></li>
+
+       <!-- <li>
+         <button class="button" style="vertical-align:middle"><span> LOGIN </span></button>
+         </li> -->
+       <li><a href="#login">LOGIN</a></li>
+       <li><a href="#SIGNUP">SIGN UP</a></li>
+       <!-- <div class="dropdown">
+           <button class="dropbtn">Dropdown</button>
+           <div class="dropdown-content">
+             <a href="#">Link 1</a>
+             <a href="#">Link 2</a>
+             <a href="#">Link 3</a>
+           </div>
+         </div> -->
+     </ul>
+   </nav>
+ </header>
+
+<br> <br><br><br><br>
+ <!----========== End of Header==========-->
+ <!-- <h1 style="text-align: center;">ABOUT US</h1><br>
+  -->
+
+<!-------===========Slider====================-->
+
+<h1 style="text-align: center;">ABOUT US</h1><br>
+<img class= bg src="asset/img/slide/slide-6.jpg" >
+
+<div class="slide">
+  <!-- <img class="mySlides" src="asset/img/slide/slide-4.jpg" style="width:1000px" height=" 500px" > -->
+  <!-- <img class="mySlides" src="asset/img/slide/slide-9.jpg" style= " width:70%" height="600px"> -->
+  <!-- <img class="mySlides" src="asset/img/slide/slide-6.jpg" style="width:90%" height="800px" > -->
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<!-- 
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="asset/img/slide/slide-4.jpg" style="width:100%" height="480px">
+    <div class="text">Caption Text</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="asset/img/slide/slide-5.jpg" style="width:100%" height="480px">
+    <div class="text">Caption Two</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="asset/img/slide/slide-3.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  
+  </div>
+  <br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!----==========About Us========================-->
+  <div class="preabout">
+    <!-- <br><br><br><br><br> -->
+      <!-- <h1 style="text-align: center;">ABOUT US</h1><br>
+   -->
+    <p> VaccineDooor is a preventative health and wellness company that is
+      supervised by Board Certified Doctors. We offer same day and next day
+      appointments and allow you to book your appointments online! We
+      specialize in travel medicine, student health, employee health, drug
+      testing, STD testing, physical exams, immigration exams, and laboratory
+      services.
+    </p>
+  </div>
+
+  <div class="about">
+    <div class="box">
+      <img src="asset/img/about.jpg">
+      <!-- height="400px" padding-left = "500px" float="right" width="500px"> -->
+    </div>
+
+    <div class="box">
+      <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>We offer same day and next day
+          appointments and allow you to book your appointments online!</strong></h1>
+      <br>
+
+
+      <li>Prescriptions for medications including Anti-Malarial, Traveler's Diarrhea, Acute Mountain Sickness
+        Prevention, etc. as indicated.</li><br>
+
+      <li>Up to date health information for your travel needs, including insect precautions and insect repellents, blood
+        clot prevention for long air flights, water and food precautions, current outbreaks and health and safety
+        concerns for areas of travel.</li><br>
+
+      <li>We are committed to providing the safest and highest quality care to our patients and clients. We are proud of
+        the highly qualified and dedicated professional staff at VaccineDoor for their commitment to providing a
+        positive
+        and comfortable clinic for our patients. We strive every day to ensure that all of our patients are satisfied
+        and well taken care of. We look forward to serving you!</p>
+      </li>
+    </div>
+
+  </div>
+
+  <!----==========End of About Us========================-->
+  
+  <!----==========Belt========================-->
+
+  <div class="belt">
+    <h4>
+      <br />In an emergency? Need help now?
+      <p class="description">
+        ODuis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+      </p>
+      <button class="belt-btn">
+	  <strong>
+	  <a href="beneficiary_form.html">Make an Appointment</a>
+	  </strong></button>
+
+      <br /><br />
+    </h4>
+  </div>
+  <!----==========End of Belt========================-->
+
+  
+  <!-- ======= Footer  ======= -->
+
+
+  <footer>
+    <div class="main-content">
+      <div class="left box">
+        <!-- <img src="asset/img/logo2.jpg" class="Footerlogo" ; />   -->
+        <h2 style="font-size: 16px;">VaccineDoor</h2>
+        <div class="content">
+          <p>A108 Adam Street <br>NY 535022, USA</p>
+          <br>
+          <p> <strong>Phone:</strong> +1 5589 55488 55 <br />
+            <strong>Email:</strong> info@example.com
+          </p>
+        </div>
+      </div>
+
+      <div class="center box">
+        <h2 style="font-size: 16px;">Useful Links</h2>
+        <div class="content">
+          <div class="links">
+            <a href="#home">Home</a> <br />
+            <a href="#about">About Us</a> <br />
+            <a href="#search">Services</a> <br />
+            <a href="#search">How it Works</a><br />
+            <a href="#search">Contact Us</a><br />
+          </div>
+        </div>
+      </div>
+
+      <div class="right box">
+        <h2 style="font-size: 16px;">Our Newsletter</h2>
+        <div class="content">
+          <form action="#">
+            <p>Subscribe to our e-mail newsletter today receive updates on
+              latest news vaccines as other special offers!!</p>
+            <div class="email">
+              <input type="email" required />
+            </div>
+            <!-- <div class="msg">
+          <div class="text">Message *</div>
+          <textarea rows="2" cols="25" required></textarea>
+        </div> -->
+            <div class="btn">
+              <button type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <center> 2021 &copy VaccineDoor All rights reserved. </center>
+    </div>
+  </footer>
+  <!-- ======= End of Footer ======= -->
+
+</body>
+
+</html>
+</body>
+
+</html>
