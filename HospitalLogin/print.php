@@ -1,3 +1,8 @@
+<?php
+print_r($_POST);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
-
+<link rel="icon" href="favicon.png" type="image/ico">
 
    <style>
       .invoice-box {
